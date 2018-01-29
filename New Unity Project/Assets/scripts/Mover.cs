@@ -32,5 +32,9 @@ public class Mover : MonoBehaviour
             //moving the sprite
             transform.position += Vector3.down * speed * Time.deltaTime;
         }
+        if (Input.GetKey(KeyCode.L))
+        {
+            speed = -speed;
+        }
     }
 }
