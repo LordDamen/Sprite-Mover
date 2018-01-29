@@ -15,7 +15,7 @@ public class Mover : MonoBehaviour
             transform.position += Vector3.left * speed * Time.deltaTime;
         }
         //getting the Input for right arrow key
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKeydown("RightArrow"))
         {
             //moving the sprite
             transform.position += Vector3.right * speed * Time.deltaTime;
